@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: com.thefinestartist:ytpa:1.2.1@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d3c9a0664b651a13848612046187be1c/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d3c9a0664b651a13848612046187be1c/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d3c9a0664b651a13848612046187be1c/jars/libs/YouTubeAndroidPlayerApi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/6a7abf7d03442be2ed9fd56a13154763/jars/libs/YouTubeAndroidPlayerApi.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/6a7abf7d03442be2ed9fd56a13154763/res" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/6a7abf7d03442be2ed9fd56a13154763/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.thefinestartist/ytpa/1.2.1/9bd518940a192d68be25736043f8d4f27e0ea234/ytpa-1.2.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.thefinestartist/ytpa/1.2.1/9bd518940a192d68be25736043f8d4f27e0ea234/ytpa-1.2.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
