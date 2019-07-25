@@ -9,15 +9,17 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.codemobiles.myfirebase.easyprepaid.R
 import com.codemobiles.myfirebase.test.beans.Youtube
 import com.codemobiles.myfirebase.test.beans.YoutubeBean
-import com.thefinestartist.ytpa.utils.YouTubeApp
 import kotlinx.android.synthetic.main.fragment_json1.view.*
 import kotlinx.android.synthetic.main.kfc_list.view.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+
+
+
+
 
 
 
@@ -29,12 +31,12 @@ private const val ARG_PARAM2 = "param2"
 class Tab_Json2 : Fragment() {
     val adapter = CustomAdapter(ArrayList<Youtube>())
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val _view = inflater.inflate(R.layout.fragment_json2, container, false)
-
+        val _view = inflater.inflate(com.codemobiles.myfirebase.easyprepaid.R.layout.fragment_json2, container, false)
 
         _view.recycleView.let {
                 mRecyclerView ->
@@ -49,6 +51,7 @@ class Tab_Json2 : Fragment() {
     private fun feed() {
         val httpClient = HttpClient.create()
         val call = httpClient.feed("foods")
+
         call.enqueue(object : Callback<YoutubeBean> {
             override fun onFailure(call: Call<YoutubeBean>, t: Throwable) {
             }
@@ -59,9 +62,10 @@ class Tab_Json2 : Fragment() {
             }
         })
     }
+
     inner class CustomAdapter(val mDataArray:ArrayList<Youtube>) : RecyclerView.Adapter<CustomViewHolder>() {
         override fun onCreateViewHolder(parent: ViewGroup, index: Int): CustomViewHolder {
-            val layout = LayoutInflater.from(parent.context).inflate(R.layout.kfc_list, parent, false)
+            val layout = LayoutInflater.from(parent.context).inflate(com.codemobiles.myfirebase.easyprepaid.R.layout.kfc_list, parent, false)
             return CustomViewHolder(layout)
         }
         override fun getItemCount(): Int {
@@ -74,7 +78,7 @@ class Tab_Json2 : Fragment() {
             holder.pay.text = item.subtitle
             Glide.with(activity!!).load(item.youtube_image).into(holder.youtube_image)
             //เซ็ตแท็กเพื่อใช้อ้างอิงอินเด็ก เพราะแอนดรอยไม่มีอินเด็กให้ใช้เพื่อเข้าถึงแต่ละโรล
-            holder.youtube_image.setTag(R.id.image, item.id)
+            holder.youtube_image.setTag(com.codemobiles.myfirebase.easyprepaid.R.id.image, item.id)
         }
 
     }
@@ -88,12 +92,12 @@ class Tab_Json2 : Fragment() {
 
 
 
+
+
         init {
             itemView.setOnClickListener {
-                var id = it.getTag(R.id.image) as String
-                Log.d("pimonwan_youtube_id", id )
-
-                YouTubeApp.startVideo(it.context, id)
+//                val bottomSheet = ButtomSheetEx()
+//                bottomSheet.show()
             }
 
 
