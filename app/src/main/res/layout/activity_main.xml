@@ -1,11 +1,254 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
 
+    <!--<ImageView-->
+    <!--android:id="@+id/BGImageView"-->
+    <!--android:src="@drawable/scb11"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--</ImageView>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/tvresult"-->
+    <!--android:textColor="#000"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--android:text="Result will be here"/>-->
     <Button
             android:text="to_page2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" android:id="@+id/topage2"/>
-</LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/TapInfo"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+        <ImageView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/header"
+                android:layout_above="@+id/TapQR"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/TapQR"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_above="@+id/Feature1">
+
+        <ImageView
+                android:id="@+id/ScanQR"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/scanqr"
+                android:scaleType="centerCrop"/>
+
+        <View
+                android:layout_width="1dp"
+                android:background="#9E9E9E"
+                android:layout_height="match_parent"/>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:src="@drawable/myqr"
+                android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/Feature1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:paddingTop="5dp"
+            android:layout_below="@id/TapInfo">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:src="@drawable/cont1"/>
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:src="@drawable/cont2"/>
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:src="@drawable/cont3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:paddingTop="5dp"
+            android:id="@+id/Feature2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/Feature1">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:src="@drawable/cont4"/>
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:src="@drawable/cont5"/>
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:src="@drawable/cont6"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:paddingTop="5dp"
+            android:id="@+id/Content1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/Feature2">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffff"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cont7"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:id="@+id/Content2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:layout_below="@id/Content1">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#ffff"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/cont7"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/tvresult"-->
+    <!--android:textColor="#000"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+    <!--android:text="Result will be here"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:id="@+id/Content3"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="120dp"-->
+    <!--android:layout_below="@id/Content2">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#ffff"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:src="@drawable/cont7"/>-->
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvresult"
+            android:textColor="#000"
+            android:layout_marginTop="520dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Result will be here"/>
+
+
+    <LinearLayout
+            android:id="@+id/menu"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="#ffff"
+            android:layout_height="60dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn1"
+                android:layout_weight="5"/>
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn2"
+                android:layout_weight="5"/>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn3"
+                android:layout_weight="5"/>
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn4"
+                android:layout_weight="5"/>
+
+
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn5"
+                android:layout_weight="5"/>
+
+    </LinearLayout>
+</RelativeLayout>
